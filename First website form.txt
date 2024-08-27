@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="website.css">
+    <title>HTML FORM</title>
+    <style>
+        #class1{
+            color: blue;
+        }
+    </style>
+</head>
+<body>
+    <h1>Sign Up/Sign In Form:</h1>
+    <form action="thankyou.html" method='POST'>
+        <input type="text" placeholder="First Name" required> <br><br>
+        <input type="text" placeholder="Last Name" required> <br><br>
+        <input type="email" placeholder="Email Id" required> <br><br>
+        <input type="password" placeholder="Password" required> <br><br>
+
+        <p>Select your gender:</p>
+        <label for="Male">Male</label>
+        <input type="radio" name="gender" id="male" value="male"> <br>
+        <label for="Female">Female</label>
+        <input type="radio" name="gender" id="Female" value="Female"> <br>
+        <label for="Other">Other</label>
+        <input type="radio" name="gender" id="Other" value="Other"> <br>
+
+        <label for="Country">Select your country:</label>
+        <select id="Country">
+            <option value="India">India</option>
+            <option value="Outside India">Outside India</option>
+        </select>
+
+        <p id="class1">Write about yourself below:</p>
+        <textarea name="" id="" cols="30" rows="10" placeholder="type here"></textarea>
+        <br>
+    
+        <input type="submit" value="Sign In">
+    </form>
+</body>
+</html>
